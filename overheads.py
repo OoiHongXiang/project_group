@@ -23,6 +23,6 @@ def overheads():
     index = percentage_list.index(highest_percentage)
     highest_category = empty_list[index][0]
     
-    print(highest_category, highest_percentage)
+    return[highest_category, highest_percentage]
 
 print(overheads())
