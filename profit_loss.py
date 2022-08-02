@@ -24,8 +24,7 @@ def profit_loss():
         if current_day < previous_day: 
             day = int(sublist[0]) 
             profit_deficit = previous_day - current_day 
-            write_data.append(day) 
-            write_data.append(profit_deficit) 
+            write_data.append([day, profit_deficit]) 
     return(write_data) 
  
 print(profit_loss())

@@ -24,8 +24,7 @@ def cash_on_hand():
         if current_day < previous_day: 
             day = int(sublist[0]) 
             cash_deficit = previous_day - current_day 
-            write_data.append(day) 
-            write_data.append(cash_deficit) 
-            return(write_data) 
+            write_data.append([day, cash_deficit]) 
+    return(write_data)
  
 print(cash_on_hand())
